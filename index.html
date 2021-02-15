@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+        <title>project</title>
+
+    </head>
+
+    <body>
+
+        <img id="book" src="https://images-na.ssl-images-amazon.com/images/I/515BniafrYL._SX258_BO1,204,203,200_.jpg">
+<br>
+        <button type="button"
+        onclick="next()">NEXT</button>
+
+    </body>
+
+    <script>
+
+        var names = ["Wallace", "my mom", "my dad", "my sister", "my brother" "me"];
+
+        var images = ["https://www.pinclipart.com/picdir/middle/20-205651_free-vector-fruit-free-vector-fruit-vector-images.png", 
+        "https://cdn5.vectorstock.com/i/1000x1000/21/34/plate-with-fruits-vector-18742134.jpg", 
+        "https://img.freepik.com/free-vector/hand-drawn-colorful-orange-illustration_53876-2977.jpg?size=626&ext=jpg", 
+        "https://image.freepik.com/free-vector/hand-drawn-strawberry-fruit-illustration_53876-2981.jpg", 
+        "https://cdn1.vectorstock.com/i/1000x1000/18/55/apple-fruit-design-vector-23321855.jpg", 
+        "https://cdn1.vectorstock.com/i/1000x1000/92/20/kiwi-fruit-vector-1319220.jpg"];
+
+        var i = 0
+function next() {
+  document.getElementById("book").src=images[i];
+  i++;
+}
+
+
+
+    </script>
+
+    <style>
+        body
+        {
+            text-align: center;
+        }
+
+        #book
+        {
+            height: 500px;
+        }
+    </style>
+
+</html>
